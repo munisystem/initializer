@@ -26,10 +26,10 @@ end
 
 execute 'Download my Brewfile' do
   command 'curl -sL https://raw.githubusercontent.com/munisystem/Brewfile/master/install.sh | sh'
-  not_if 'test -e ~/Brewfile'
+  not_if 'test -e /Users/muni/Brewfile'
 end
 
 execute 'Execute brew brewdler' do
   command 'brew brewdler'
-  cwd '~/Brewfile'
+  cwd '/Users/muni/Brewfile'
 end
