@@ -24,12 +24,12 @@ execute 'Install brewdler' do
   command 'brew tap Homebrew/brewdler'
 end
 
-template '/Users/muni/Brewfile' do
-  source './templates/Brewfile'
-  mode '0755'
+execute 'Download my Brewfile' do
+  command 'curl -sL https://raw.githubusercontent.com/munisystem/Brewfile/master/install.sh | sh'
+  not_if 'test -e ~/Brewfile'
 end
 
 execute 'Execute brew brewdler' do
   command 'brew brewdler'
-  cwd '/Users/muni'
+  cwd '~/Brewfile'
 end
