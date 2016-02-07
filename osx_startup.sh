@@ -21,7 +21,7 @@ startup(){
   if [ -d "$recipe" ]; then
     (cd "$recipe" && git pull --rebase)
   else
-    git clone git@github.com:munisystem/itamae-osx "$recipe"
+    git clone https://github.com/munisystem/startup-itamae "$recipe"
   fi
 
   # Exec Itamae
