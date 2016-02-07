@@ -25,7 +25,7 @@ startup(){
   fi
 
   # Exec Itamae
-  (cd "$recipe/roles/" && itamae local main.rb)
+  (cd "$recipe/roles/osx" && itamae local default.rb -l debug)
 }
 
 startup
