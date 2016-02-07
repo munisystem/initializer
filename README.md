@@ -1,4 +1,4 @@
-Itamae-startup
+Startup-Itamae
 =====
 
 ## Information
@@ -6,5 +6,5 @@ Itamae-startup
 
 ## Installation
 ```sh
-curl -sL https://raw.githubusercontent.com/munisystem/itamae-startup/master/osx_startup.sh | sh
+curl -sL https://raw.githubusercontent.com/munisystem/startup-itamae/master/osx_startup.sh | sh
 ```
