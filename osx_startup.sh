@@ -4,7 +4,7 @@ set -e
 set -u
 
 startup(){
-  recipe=$HOME/itamae-startup
+  recipe=$HOME/startup-itamae
 
   has(){
     type "$1" > /dev/null 2>&1
