@@ -7,6 +7,7 @@ template '/etc/shells' do
   owner 'root'
   group 'wheel'
   mode '0644'
+  user 'root'
 end
 
 execute 'Set default shell zsh' do
