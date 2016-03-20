@@ -1,6 +1,6 @@
-# execute 'Download my dotfiles' do
-#   command 'curl -sL dots.munisystem.net | sh'
-# end
+execute 'Download my dotfiles' do
+  command 'curl -sL dots.munisystem.net | sh'
+end
 
 template '/etc/shells' do
   source './templates/shells'
