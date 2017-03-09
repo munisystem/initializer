@@ -20,8 +20,8 @@ execute 'Install cask' do
   command 'brew install caskroom/cask/brew-cask'
 end
 
-execute 'Install brewdler' do
-  command 'brew tap Homebrew/brewdler'
+execute 'Install brew bundle' do
+  command 'brew tap Homebrew/bundle'
 end
 
 execute 'Download my Brewfile' do
@@ -29,7 +29,7 @@ execute 'Download my Brewfile' do
   not_if 'test -e /Users/muni/Brewfile'
 end
 
-execute 'Execute brew brewdler' do
-  command 'brew brewdler'
+execute 'Execute brew bundle' do
+  command 'brew bundle'
   cwd '/Users/muni/Brewfile'
 end
