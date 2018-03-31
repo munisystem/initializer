@@ -1,6 +1,6 @@
 execute 'Install Homebrew' do
   command <<-EOL
-     ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
+     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   EOL
   notifies :run, 'execute[Update Homebrew]', :immediately
   notifies :run, 'execute[Check Homebrew]', :immediately
