@@ -1,10 +1,11 @@
-Startup-Itamae
-=====
+# Initializer [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-## Information
- - OSX
+Ready to development at a moment by only one command.
 
 ## Installation
 ```sh
-curl -sL https://raw.githubusercontent.com/munisystem/startup-itamae/master/osx_startup.sh | sh
+$ bash <(curl -sL https://raw.githubusercontent.com/munisystem/initializer/master/entrypoint)
 ```
+
+## License
+MIT © munisystem

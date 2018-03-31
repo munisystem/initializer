@@ -1,10 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e
 set -u
 
 startup(){
-  recipe=$HOME/startup-itamae
+  recipe=$HOME/initializer
 
   has(){
     type "$1" > /dev/null 2>&1
@@ -21,7 +21,7 @@ startup(){
   if [ -d "$recipe" ]; then
     (cd "$recipe" && git pull --rebase)
   else
-    git clone https://github.com/munisystem/startup-itamae "$recipe"
+    git clone https://github.com/munisystem/initializer "$recipe"
   fi
 
   # Exec Itamae
