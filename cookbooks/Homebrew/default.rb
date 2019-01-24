@@ -25,7 +25,7 @@ execute 'Install brew bundle' do
 end
 
 execute 'Download my Brewfile' do
-  command 'curl -sL https://raw.githubusercontent.com/munisystem/Brewfile/master/install.sh | sh'
+  command 'curl -sL https://raw.githubusercontent.com/munisystem/Brewfile/master/entrypoint | sh'
   not_if 'test -e /Users/muni/Brewfile'
 end
 
